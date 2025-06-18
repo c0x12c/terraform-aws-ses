@@ -97,5 +97,7 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_domain_identity_arn"></a> [domain\_identity\_arn](#output\_domain\_identity\_arn) | The ARN of the SES domain identity. |
+| <a name="output_domain_identity_id"></a> [domain\_identity\_id](#output\_domain\_identity\_id) | n/a |
+| <a name="output_email_identity_ids"></a> [email\_identity\_ids](#output\_email\_identity\_ids) | n/a |
 | <a name="output_iam_policy_ses_send_email"></a> [iam\_policy\_ses\_send\_email](#output\_iam\_policy\_ses\_send\_email) | n/a |
 <!-- END_TF_DOCS -->

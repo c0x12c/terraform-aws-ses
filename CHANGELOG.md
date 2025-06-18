@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.1]() (2025-06-18)
+
+### Changes
+
+* Add new outputs for domain and email identity IDs.
+
 ## [0.2.0]() (2025-06-18)
 
 ### Removed
