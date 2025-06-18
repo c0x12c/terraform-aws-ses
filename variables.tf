@@ -5,19 +5,19 @@ variable "email_domain" {
 
 variable "emails" {
   description = "List of email addresses allowed for sending in SES sandbox mode. These are verified to send emails during testing."
-  type = list(string)
-  default = []
+  type        = list(string)
+  default     = []
 }
 
 variable "principal_roles" {
   description = "List of IAM principal roles that should have access to SES."
-  type = list(string)
+  type        = list(string)
   default     = null
 }
 
 variable "iam_role_ids" {
-  type = list(string)
-  default = []
+  type        = list(string)
+  default     = []
   description = "List of IAM role ids that should have access to SES. These roles will have permissions to send SES email."
 }
 

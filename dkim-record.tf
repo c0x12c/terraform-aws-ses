@@ -16,8 +16,8 @@ resource "aws_route53_record" "dkim" {
   count = var.publish_dkim_record ? 3 : 0
 
   zone_id = data.aws_route53_zone.this[0].id
-  name    = "${aws_ses_domain_dkim.this.0.dkim_tokens[count.index]}._domainkey"
+  name    = "${aws_ses_domain_dkim.this[0].dkim_tokens[count.index]}._domainkey"
   type    = "CNAME"
   ttl     = "600"
-  records = ["${aws_ses_domain_dkim.this.0.dkim_tokens[count.index]}.dkim.amazonses.com"]
+  records = ["${aws_ses_domain_dkim.this[0].dkim_tokens[count.index]}.dkim.amazonses.com"]
 }
