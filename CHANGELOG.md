@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.0]() (2025-06-18)
+
+### Removed
+
+* Remove outgoing email logs and Datadog integrations.
+
 ## [0.1.81]() (2025-03-13)
 
 ### Features
