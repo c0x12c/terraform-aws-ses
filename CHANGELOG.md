@@ -1,6 +1,12 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
+## [1.0.0]() (2025-08-22)
+
+### BREAKING CHANGES
+
+* Separate module to registry module
+* Add emails arn to policy to allow role could take action on email
 
 ## [0.2.1]() (2025-06-18)
 
