@@ -40,10 +40,14 @@ data "aws_iam_policy_document" "this" {
       "ses:SendEmail",
       "ses:SendRawEmail"
     ]
-    resources = [
-      aws_ses_domain_identity.this.arn,
-      "${aws_ses_domain_identity.this.arn}/*"
-    ]
+    resources = concat(
+      [
+        aws_ses_domain_identity.this.arn,
+        "${aws_ses_domain_identity.this.arn}/*",
+      ],
+      [for e in aws_ses_email_identity.emails : e.arn]
+    )
+
   }
 }
 
